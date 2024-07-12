@@ -1,0 +1,21 @@
+.text {
+  &__white {
+    color: white;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+
+  &__bold {
+    font-weight: 800;
+  }
+
+  &__small {
+    font-size: $text-small;
+  }
+
+  &__medium {
+    font-size: $text-medium;
+  }
+}

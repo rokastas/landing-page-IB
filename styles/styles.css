@@ -1,6 +1,19 @@
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 920px;
+}
+.container--black {
+  background-color: black;
+  padding-bottom: 30px;
+}
+.container--full-w {
+  min-width: 100vw;
+}
+.container--cards {
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .spacer--small {
@@ -85,21 +98,18 @@
   color: red;
 }
 
-.card-container {
-  display: flex;
-  gap: 20px;
-}
-
 .card {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color: #f9e8e7;
   padding: 26px 14px;
   border-radius: 15px;
   row-gap: 10px;
+}
+.card--pink {
+  background-color: #f9e8e7;
 }
 .card__logo {
   flex-shrink: 0;
@@ -109,6 +119,26 @@
   font-size: 16px;
   font-weight: 400;
   padding-left: 12px;
+  max-width: 140px;
+}
+.card--flex-column {
+  flex-direction: column;
+}
+
+.text__white {
+  color: white;
+}
+.text__centered {
+  text-align: center;
+}
+.text__bold {
+  font-weight: 800;
+}
+.text__small {
+  font-size: 16px;
+}
+.text__medium {
+  font-size: 22px;
 }
 
 /* Basic Reset */
@@ -116,6 +146,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 body {
@@ -123,4 +155,5 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  font-weight: 400;
 }/*# sourceMappingURL=styles.css.map */

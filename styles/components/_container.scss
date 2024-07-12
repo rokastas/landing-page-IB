@@ -1,4 +1,20 @@
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 920px;
+
+  &--black {
+    background-color: black;
+    padding-bottom: 30px;
+  }
+
+  &--full-w {
+    min-width: 100vw;
+  }
+
+  &--cards {
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 20px;
+  }
 }

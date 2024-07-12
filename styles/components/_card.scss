@@ -1,18 +1,16 @@
-.card-container {
-  display: flex;
-  gap: 20px;
-}
-
 .card {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color: $pink;
   padding: 26px 14px;
   border-radius: 15px;
   row-gap: 10px;
+
+  &--pink {
+    background-color: $pink;
+  }
 
   &__logo {
     flex-shrink: 0;
@@ -23,5 +21,10 @@
     font-size: $text-small;
     font-weight: 400;
     padding-left: 12px;
+    max-width: 140px;
+  }
+
+  &--flex-column {
+    flex-direction: column;
   }
 }
