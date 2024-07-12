@@ -6,12 +6,11 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  font-family: $font-family;
   padding: 8px 0;
   background-color: white;
 
   &__text {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: $text-medium;
+    font-weight: 600;
   }
 }

@@ -4,8 +4,7 @@
   z-index: 1000;
   border-radius: 15px;
   border: none;
-  font-family: $font-family;
-  font-size: 22px;
+  font-size: $text-medium;
   cursor: pointer;
 
   &--red {

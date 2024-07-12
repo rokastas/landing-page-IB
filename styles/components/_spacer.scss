@@ -1,0 +1,13 @@
+.spacer {
+  &--small {
+    margin: $spacer-small 0;
+  }
+
+  &--medium {
+    margin: $spacer-medium 0;
+  }
+
+  &--large {
+    margin: $spacer-large 0;
+  }
+}

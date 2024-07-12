@@ -1,0 +1,27 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: $pink;
+  padding: 26px 14px;
+  border-radius: 15px;
+  row-gap: 10px;
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    display: block;
+    font-size: $text-small;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+}
