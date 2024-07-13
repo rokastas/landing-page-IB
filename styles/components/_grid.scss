@@ -1,7 +1,5 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 16px;
   box-sizing: border-box;
 
@@ -14,6 +12,11 @@
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+
+  &--3x2-2x3-1x6 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
@@ -29,6 +32,12 @@
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
+
+    &--3x2-2x3-1x6 {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 0;
+    }
   }
 }
 
@@ -40,7 +49,14 @@
     }
 
     &--1x3-3x1 {
-      width: 80%;
+      width: $tablet-content-width;
+      margin: 0 auto;
+    }
+
+    &--3x2-2x3-1x6 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: $tablet-content-width;
       margin: 0 auto;
     }
   }

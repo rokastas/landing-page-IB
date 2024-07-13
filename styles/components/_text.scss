@@ -1,4 +1,11 @@
 .text {
+  &--title-medium {
+    font-size: $text-medium;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   &--white {
     color: white;
   }
@@ -26,4 +33,20 @@
 
 b {
   font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .text {
+    &--title-medium {
+      max-width: 310px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .text {
+    &--title-medium {
+      max-width: 400px;
+    }
+  }
 }
