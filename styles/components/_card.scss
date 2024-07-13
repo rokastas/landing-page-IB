@@ -25,6 +25,8 @@
 
   &--black {
     flex-direction: column;
+    padding: 0;
+    min-height: auto;
 
     &__text {
       text-align: center;

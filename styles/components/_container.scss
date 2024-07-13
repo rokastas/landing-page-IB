@@ -4,17 +4,16 @@
   overflow-x: hidden;
   width: 920px;
   margin: 0 auto;
+  padding: $spacer-medium 0;
 
   &--black {
+    position: relative;
     background-color: black;
+    padding: $spacer-medium 0;
   }
 
   &--full-w {
     min-width: 100vw;
-  }
-
-  &--spacer-medium {
-    padding: $spacer-medium 0;
   }
 }
 
@@ -22,6 +21,17 @@
   .container {
     padding: $spacer-small 0;
     max-width: 100vw;
+
+    &--black {
+      padding: $spacer-large 0;
+
+      &__text {
+        transform: translateY(-65%) rotate(-90deg);
+        transform-origin: right;
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 }
 
