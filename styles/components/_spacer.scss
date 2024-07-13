@@ -1,13 +1,25 @@
 .spacer {
-  &--small {
-    margin: $spacer-small 0;
+  &--top-small {
+    padding-top: $spacer-small;
   }
 
-  &--medium {
-    margin: $spacer-medium 0;
+  &--top-medium {
+    padding-top: $spacer-medium;
   }
 
-  &--large {
-    margin: $spacer-large 0;
+  &--top-large {
+    padding-top: $spacer-large;
+  }
+
+  &--bottom-small {
+    padding-bottom: $spacer-small;
+  }
+
+  &--bottom-medium {
+    padding-bottom: $spacer-medium;
+  }
+
+  &--bottom-large {
+    padding-bottom: $spacer-large;
   }
 }
