@@ -1,21 +1,29 @@
 .text {
-  &__white {
+  &--white {
     color: white;
   }
 
-  &__centered {
+  &--centered {
     text-align: center;
   }
 
-  &__bold {
-    font-weight: 800;
+  &--semi-bold {
+    font-weight: 400;
   }
 
-  &__small {
+  &--bold {
+    font-weight: 500;
+  }
+
+  &--small {
     font-size: $text-small;
   }
 
-  &__medium {
+  &--medium {
     font-size: $text-medium;
   }
+}
+
+b {
+  font-weight: 600;
 }

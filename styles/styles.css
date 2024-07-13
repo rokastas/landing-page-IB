@@ -1,11 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 920px;
+  overflow-x: hidden;
 }
 .container--black {
   background-color: black;
   padding-bottom: 30px;
+}
+.container--wide {
+  width: 920px;
 }
 .container--full-w {
   min-width: 100vw;
@@ -16,6 +19,11 @@
   gap: 20px;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
+  }
+}
 .spacer--small {
   margin: 30px 0;
 }
@@ -28,6 +36,7 @@
 
 .navbar {
   width: 100%;
+  max-height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,21 +51,18 @@
 
 .hero {
   position: relative;
-  min-height: 700px;
+  height: 700px;
   width: 100%;
   overflow: hidden;
+  background-image: url("../../public/main img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.hero__image {
-  position: absolute;
-  width: 100%;
-  min-height: 700px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .hero__text, .hero__button {
   position: relative;
@@ -74,10 +80,34 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  position: absolute;
+  bottom: 40px;
 }
 
+@media (max-width: 480px) {
+  .hero {
+    height: calc(100vh - 44px);
+    background-image: url("../../public/main img mobile.jpg");
+  }
+  .hero__button {
+    bottom: 40px;
+  }
+  .hero__text {
+    max-width: 330px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .hero {
+    height: calc(100vh - 44px);
+    background-image: url("../../public/main img tablet.jpg");
+  }
+  .hero__button {
+    bottom: 200px;
+  }
+}
 .button {
-  min-width: 360px;
+  width: 360px;
+  max-width: 95vw;
   min-height: 54px;
   z-index: 1000;
   border-radius: 15px;
@@ -88,10 +118,6 @@
 .button--red {
   background-color: red;
   color: white;
-}
-.button--bottom {
-  position: absolute;
-  bottom: 40px;
 }
 .button:hover {
   background-color: white;
@@ -113,32 +139,62 @@
 }
 .card__logo {
   flex-shrink: 0;
+  max-width: 42px;
 }
 .card__text {
   display: block;
   font-size: 16px;
-  font-weight: 400;
-  padding-left: 12px;
-  max-width: 140px;
+  max-width: 176px;
+}
+.card__text--narrow {
+  max-width: 120px;
+}
+.card__text--very-narrow {
+  max-width: 80px;
+}
+.card__text--padding-left {
+  padding-left: 16px;
 }
 .card--flex-column {
   flex-direction: column;
 }
 
-.text__white {
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+  }
+}
+.text--white {
   color: white;
 }
-.text__centered {
+.text--centered {
   text-align: center;
 }
-.text__bold {
-  font-weight: 800;
+.text--semi-bold {
+  font-weight: 400;
 }
-.text__small {
+.text--bold {
+  font-weight: 500;
+}
+.text--small {
   font-size: 16px;
 }
-.text__medium {
+.text--medium {
   font-size: 22px;
+}
+
+b {
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
 }
 
 /* Basic Reset */
@@ -146,8 +202,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 body {
@@ -155,5 +210,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Plus Jakarta Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100vw;
+  overflow-x: hidden;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 .button {
-  min-width: 360px;
+  width: 360px;
+  max-width: 95vw;
   min-height: 54px;
   z-index: 1000;
   border-radius: 15px;
@@ -10,11 +11,6 @@
   &--red {
     background-color: red;
     color: white;
-  }
-
-  &--bottom {
-    position: absolute;
-    bottom: 40px;
   }
 
   &:hover {

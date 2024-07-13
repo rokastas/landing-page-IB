@@ -1,11 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 920px;
+  overflow-x: hidden;
 
   &--black {
     background-color: black;
     padding-bottom: 30px;
+  }
+
+  &--wide {
+    width: 920px;
   }
 
   &--full-w {
@@ -16,5 +20,11 @@
     flex-direction: row;
     margin: 0 auto;
     gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
   }
 }

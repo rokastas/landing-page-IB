@@ -14,17 +14,34 @@
 
   &__logo {
     flex-shrink: 0;
+    max-width: 42px;
   }
 
   &__text {
     display: block;
     font-size: $text-small;
-    font-weight: 400;
-    padding-left: 12px;
-    max-width: 140px;
+    max-width: 176px;
+
+    &--narrow {
+      max-width: 120px;
+    }
+
+    &--very-narrow {
+      max-width: 80px;
+    }
+
+    &--padding-left {
+      padding-left: 16px;
+    }
   }
 
   &--flex-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
     flex-direction: column;
   }
 }

@@ -1,15 +1,12 @@
 .hero {
   position: relative;
-  min-height: 700px;
+  height: 700px;
   width: 100%;
   overflow: hidden;
-
-  &__image {
-    position: absolute;
-    width: 100%;
-    min-height: 700px;
-    object-fit: cover;
-  }
+  background-image: url("../../public/main img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &__text, &__button {
     position: relative;
@@ -29,6 +26,8 @@
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    position: absolute;
+    bottom: 40px;
   }
 
   display: flex;
@@ -36,4 +35,30 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: calc(100vh - $navbar-height);
+    background-image: url("../../public/main img mobile.jpg");
+
+    &__button {
+      bottom: 40px;
+    }
+
+    &__text {
+      max-width: 330px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .hero {
+    height: calc(100vh - $navbar-height);
+    background-image: url("../../public/main img tablet.jpg");
+
+    &__button {
+      bottom: 200px;
+    }
+  }
 }

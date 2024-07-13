@@ -6,7 +6,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,47 +19,47 @@
     </header>
 
     <section class="hero">
-      <img class="hero__image" src="public/main img.jpg" alt="main image" />
+      <!-- <img class="hero__image" src="public/main img.jpg" alt="main image" /> -->
       <h1 class="hero__text">new year, new “you” with [product name]</h1>
       <button
-        class="button button--red button--bottom"
+        class="hero__button button button--red"
         onclick="tryProductAlert()"
       >
         try product
       </button>
     </section>
 
-    <section class="container container--cards spacer--medium">
+    <section class="container container--wide container--cards spacer--medium">
       <div class="card card--pink">
         <img class="card__logo" src="public/moon icon.png" alt="moon icon" />
-        <h2 class="card__text">Improves sleep</h2>
+        <h3 class="card__text card__text--padding-left">Improves sleep</h3>
       </div>
 
       <div class="card card--pink">
         <img class="card__logo" src="public/shield icon.png" alt="shield icon" />
-        <h2 class="card__text">Boosts immune system</h2>
+        <h3 class="card__text card__text--padding-left">Boosts immune system</h3>
       </div>
 
       <div class="card card--pink">
         <img class="card__logo" src="public/fist icon.png" alt="fist icon" />
-        <h2 class="card__text">Enhances strength</h2>
+        <h3 class="card__text card__text--padding-left">Enhances strength</h3>
       </div>
 
       <div class="card card--pink">
         <img class="card__logo" src="public/snake icon.png" alt="snake icon" />
-        <h2 class="card__text">Improves digestion</h2>
+        <h3 class="card__text card__text--padding-left">Improves digestion</h3>
       </div>
     </section>
 
     <section class="container container--full-w container--black">
-      <h2 class="text__white text__centered text__medium spacer--small">
+      <h2 class="text--white text--centered text--medium text--semi-bold spacer--small">
         subscribe & save
       </h2>
 
       <div class="container container--cards">
         <div class="card card--flex-column">
           <img class="card__logo" src="public/cycle icon.png" alt="cycle icon" />
-          <h2 class="card__text text__white">delivery every 30 days</h2>
+          <h3 class="card__text card__text--narrow text--centered text--white">delivery every 30 days</h3>
         </div>
 
         <div class="card card--flex-column">
@@ -68,12 +68,50 @@
             src="public/percent icon.png"
             alt="percent icon"
           />
-          <h2 class="card__text text__white">best value per box</h2>
+          <h3 class="card__text card__text--very-narrow text--centered text--white">best value per box</h3>
         </div>
 
         <div class="card card--flex-column">
           <img class="card__logo" src="public/x icon.png" alt="x icon" />
-          <h2 class="card__text text__white">no commitment, cancel anytime</h2>
+          <h3 class="card__text text--centered text--white">no commitment, cancel anytime</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="container container--wide">
+      <h2 class="text--centered text--medium text--bold spacer--medium">
+        Performance nutrition and healthy transformation made simple:
+      </h2>
+
+      <div class="grid">
+        <div class="card">
+          <img class="card__logo" src="public/running man.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left">Enhance <b>endurance</b>, <b>performance</b>, and exercise <b>recovery</b></h3>
+        </div>
+
+        <div class="card">
+          <img class="card__logo" src="public/red lightning bolt.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left">Enjoy jitter-free <b>energy</b> to tackle your busy schedule</h3>
+        </div>
+
+        <div class="card">
+          <img class="card__logo" src="public/shield-virus-solid 1.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left">Strengthen your <b>immune health</b> to stay on your game</h3>
+        </div>
+
+        <div class="card">
+          <img class="card__logo" src="public/thumbs up.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left"><b>Tastes amazing</b>! No bitterness, gritty, or clumpy texture</h3>
+        </div>
+
+        <div class="card">
+          <img class="card__logo" src="public/check mark.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left"><b>30 sec habit</b>. Mixes in any beverage fast and easy</h3>
+        </div>
+
+        <div class="card">
+          <img class="card__logo" src="public/fire.svg" alt="x icon" />
+          <h3 class="card__text card__text--padding-left">Recharged <b>metabolism</b> to stay in peak shape</h3>
         </div>
       </div>
     </section>
