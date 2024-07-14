@@ -6,6 +6,13 @@
     margin: 0 auto;
   }
 
+  &--title-large {
+    font-size: $text-large;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   &--white {
     color: white;
   }
@@ -29,6 +36,10 @@
   &--medium {
     font-size: $text-medium;
   }
+
+  &--right {
+    text-align: right;
+  }
 }
 
 b {
@@ -47,6 +58,10 @@ b {
   .text {
     &--title-medium {
       max-width: 400px;
+    }
+
+    &--title-large {
+      max-width: 600px;
     }
   }
 }

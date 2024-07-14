@@ -3,61 +3,115 @@
   gap: 16px;
   box-sizing: border-box;
 
-  &--1x4-2x2 {
+  &--4-cards {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 
-  &--1x3-3x1 {
+  &--subscribe {
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 
-  &--3x2-2x3-1x6 {
+  &--performance {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  &--process {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    &__item {
+      height: 100px;
+    }
+
+    &__middle {
+      display: flex;
+      justify-content: center;
+      max-width: 50px;
+      grid-row: span 4;
+
+      &__icons {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding-top: 84px;
+        gap: 106px;
+      }
+
+      &__vector {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        position: relative;
+
+        &__point {
+          position: absolute;
+          width: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+
+          &--bottom {
+            position: absolute;
+          width: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -3px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   .grid {
-    &--1x4-2x2 {
+    &--4-cards {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       padding: 0 16px;
     }
 
-    &--1x3-3x1 {
+    &--subscribe {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
 
-    &--3x2-2x3-1x6 {
+    &--performance {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(6, 1fr);
       gap: 0;
+    }
+
+    &--process {
+      visibility: hidden;
     }
   }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .grid {
-    &--1x4-2x2 {
+    &--4-cards {
       gap: 36px;
       padding: 0 36px;
     }
 
-    &--1x3-3x1 {
+    &--subscribe {
       width: $tablet-content-width;
       margin: 0 auto;
     }
 
-    &--3x2-2x3-1x6 {
+    &--performance {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       width: $tablet-content-width;
       margin: 0 auto;
+    }
+
+    &--process {
+      padding: 0 20px;
     }
   }
 }
