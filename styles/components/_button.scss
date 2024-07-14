@@ -6,15 +6,22 @@
   border-radius: 15px;
   border: none;
   font-size: $text-medium;
+  font-weight: 400;
   cursor: pointer;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: rgb(50, 50, 50);
+  }
 
   &--red {
     background-color: red;
     color: white;
-  }
 
-  &:hover {
-    background-color: white;
-    color: red;
+    &:hover {
+      background-color: rgb(255, 70, 70);
+    }
   }
 }
