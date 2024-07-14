@@ -1,7 +1,7 @@
 .text {
   &--title-medium {
     font-size: $text-medium;
-    font-weight: 500;
+    font-weight: $text-bold;
     text-align: center;
     margin: 0 auto;
   }
@@ -30,7 +30,7 @@
   }
 
   &--bold {
-    font-weight: 500;
+    font-weight: $text-bold;
   }
 
   &--small {
@@ -47,7 +47,7 @@
 }
 
 b {
-  font-weight: 600;
+  font-weight: $text-bold;
 }
 
 @media (max-width: 480px) {
