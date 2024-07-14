@@ -6,3 +6,9 @@
     justify-content: right;
   }
 }
+
+@media (max-width: 480px) {
+  .horizontal-line {
+    display: none;
+  }
+}
