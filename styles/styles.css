@@ -385,7 +385,7 @@ b {
     gap: 0;
   }
   .grid--process {
-    visibility: hidden;
+    overflow: hidden;
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
