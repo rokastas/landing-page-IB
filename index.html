@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -183,9 +187,72 @@
     </section>
 
     <section class="container container--blend">
-      <h2 class="text--title-large spacer--bottom-large">
+      <h2 class="text--title-large spacer--bottom-medium">
         <span class="text--title-large text--red">[product name]</span> blend
       </h2>
+
+      <div class="slider-container spacer--bottom-large">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="swiper-slide__text">
+                <span class="text--title-medium">Metabolism Boosting</span>
+                <br /><br />
+                These powerful superfoods ignite your metabolism and reduce bloating. They improve digestion and deliver the energy you need to get things done.
+                <br /><br />
+                Main Organic Ingiredents:
+              </p>
+              <div class="swiper-grid">
+                <div class="card card--ingredient">
+                  <img
+                    class="swiper-grid__img"
+                    src="public/acai_berry.png"
+                    alt="organic acai berry"
+                  />
+                  <p class="swiper-grid__text">organic acai<br />berry</p>
+                </div>
+
+                <div class="card card--ingredient">
+                  <img
+                    class="swiper-grid__img"
+                    src="public/acacia_gum.png"
+                    alt="organic acacia gum"
+                  />
+                  <p class="swiper-grid__text">organic<br />acacia gum</p>
+                </div>
+
+                <div class="card card--ingredient">
+                  <img
+                    class="swiper-grid__img"
+                    src="public/organic_cinamon.png"
+                    alt="organic ceylon cinnamon bark"
+                  />
+                  <p class="swiper-grid__text">organic ceylon cinnamon bark</p>
+                </div>
+
+                <div class="card card--ingredient">
+                  <img
+                    class="swiper-grid__img"
+                    src="public/green_tea.png"
+                    alt="organic green tea"
+                  />
+                  <p class="swiper-grid__text">organic<br />green tea</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+
+          <div class="swiper-navigation-container">
+            <div class="swiper-button-prev swiper-button-custom"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next swiper-button-custom"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="button" onclick="addToCartAlert()">add to cart</button>
     </section>
 
     <section class="container">
@@ -332,6 +399,7 @@
 
     <footer></footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

@@ -167,15 +167,21 @@
   border-radius: 15px;
   border: none;
   font-size: 22px;
+  font-weight: 400;
   cursor: pointer;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+.button:hover {
+  background-color: rgb(50, 50, 50);
 }
 .button--red {
   background-color: red;
   color: white;
 }
-.button:hover {
-  background-color: white;
-  color: red;
+.button--red:hover {
+  background-color: rgb(255, 70, 70);
 }
 
 .card {
@@ -217,6 +223,11 @@
 }
 .card--black__text--very-narrow {
   max-width: 80px;
+}
+.card--ingredient {
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
 }
 
 @media (max-width: 480px) {
@@ -467,11 +478,102 @@ footer {
   height: 30px;
 }
 
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  min-height: 300px;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 100px;
+}
+.swiper-slide__text {
+  max-width: 320px;
+}
+
+.swiper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.swiper-grid__img {
+  width: 112px;
+}
+.swiper-grid__text {
+  max-width: 120px;
+  text-align: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.swiper-navigation-container {
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 100px);
+}
+
+.swiper-button-custom::after {
+  color: black;
+  font-size: 20px !important;
+  font-weight: 800;
+}
+
+.swiper-pagination-bullet {
+  background: none !important;
+  border: 1px solid black !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .swiper-slide__text {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .swiper-slide {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .swiper-slide__text {
+    text-align: center;
+    max-width: 560px;
+  }
+}
 /* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 body {
