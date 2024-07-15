@@ -396,9 +396,9 @@
 .hero {
   position: relative;
   height: 700px;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  background-image: url("./../public/main img.jpg");
+  background-image: url("./../images/main img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -431,7 +431,7 @@
 @media (max-width: 480px) {
   .hero {
     height: calc(100vh - 44px);
-    background-image: url("./../public/main img mobile.jpg");
+    background-image: url("./../images/main img mobile.jpg");
   }
   .hero__button {
     bottom: 40px;
@@ -443,7 +443,7 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .hero {
     height: calc(100vh - 44px);
-    background-image: url("./../public/main img tablet.jpg");
+    background-image: url("./../images/main img tablet.jpg");
   }
   .hero__button {
     bottom: 200px;
