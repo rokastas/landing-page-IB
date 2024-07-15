@@ -23,25 +23,6 @@
     max-width: 170px;
   }
 
-  &--black {
-    flex-direction: column;
-    padding: 0;
-    min-height: auto;
-
-    &__text {
-      text-align: center;
-      color: white;
-
-      &--narrow {
-        max-width: 120px;
-      }
-
-      &--very-narrow {
-        max-width: 80px;
-      }
-    }
-  }
-
   &--ingredient {
     flex-direction: column;
     padding: 0;
@@ -67,14 +48,6 @@
       &--wide {
         text-align: left;
       }
-    }
-
-    &--black {
-      flex-direction: row;
-      width: 100vw;
-      min-height: min-content;
-      padding: 10px 20px;
-      max-width: 100%;
     }
   }
 }

@@ -6,13 +6,6 @@
   margin: 0 auto;
   padding: $spacer-medium 0;
 
-  &--subscribe {
-    min-width: 100vw;
-    position: relative;
-    background-color: black;
-    padding: $spacer-medium 0;
-  }
-
   &--usda {
     min-width: 100vw;
     background-color: $light-gray;
@@ -53,17 +46,6 @@
   .container {
     padding: $spacer-small 0;
     max-width: 100vw;
-
-    &--subscribe {
-      padding: $spacer-large 0;
-
-      &__text {
-        transform: translateY(-65%) rotate(-90deg);
-        transform-origin: right;
-        position: absolute;
-        right: 0;
-      }
-    }
 
     &--usda {
       flex-direction: column;

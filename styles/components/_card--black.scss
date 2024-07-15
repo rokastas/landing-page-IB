@@ -1,0 +1,37 @@
+.card {
+  &--black {
+    flex-direction: column;
+    padding: 0;
+    min-height: auto;
+
+    &__text {
+      text-align: center;
+      color: white;
+
+      &--narrow {
+        max-width: 120px;
+      }
+
+      &--very-narrow {
+        max-width: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    &--black {
+      flex-direction: row;
+      width: 100vw;
+      min-height: min-content;
+      padding: 10px 20px;
+      max-width: 100%;
+
+      &__text {
+        text-align: left;
+        max-width: none;
+      }
+    }
+  }
+}
