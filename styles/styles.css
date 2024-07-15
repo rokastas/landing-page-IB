@@ -201,8 +201,8 @@
   max-height: 42px;
 }
 .card__logo-small {
-  max-width: 32px;
-  max-height: 32px;
+  max-width: 42px;
+  max-height: 42px;
 }
 .card__text {
   display: block;
@@ -534,6 +534,7 @@ footer {
   position: absolute;
   bottom: -50px;
   left: calc(50% - 100px);
+  z-index: 100;
 }
 
 .swiper-button-custom::after {
