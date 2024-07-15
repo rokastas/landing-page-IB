@@ -14,23 +14,6 @@ This project is a dynamic and responsive landing page for showcasing a health an
 - **Live Sass Compile**: An extension for compiling SCSS files into CSS in real-time.
 - **http-server**: A simple, zero-configuration command-line HTTP server.
 
-## Project Structure
-
-  .<br/>
-  ├── index.html<br/>
-  ├── partials/<br/>
-  │   ├── blend-slider.html<br/>
-  │   └── ...<br/>
-  ├── scripts/<br/>
-  │   └── scripts.js<br/>
-  ├── styles/<br/>
-  │   ├── styles.css<br/>
-  │   ├── styles.scss<br/>
-  │   └── ...<br/>
-  ├── images/<br/>
-  │   └── ...<br/>
-  └── README.md<br/>
-
 
 ## Getting Started
 
@@ -77,14 +60,14 @@ Open your browser and navigate to http://localhost:8080 (or the port number prov
 
 ### File Descriptions
 
-**index.html**: The main HTML file that includes the structure of the landing page.<br/>
+**images/**: Directory containing image assets used in the project.<br/>
 **partials/**: Directory containing partial HTML files for different sections of the page.<br/>
 **scripts/**: Directory containing JavaScript files.<br/>
-**scripts.js**: Main JavaScript file for handling dynamic content loading and Swiper initialization.<br/>
+  **scripts.js**: Main JavaScript file for handling dynamic content loading and Swiper initialization.<br/>
 **styles/**: Directory containing CSS and SCSS files.<br/>
-**styles.css**: Compiled CSS file.<br/>
-**styles.scss**: Main SCSS file for styling the page.<br/>
-**images/**: Directory containing image assets used in the project.<br/>
+  **styles.css**: Compiled CSS file.<br/>
+  **styles.scss**: Main SCSS file for styling the page.<br/>
+**index.html**: The main HTML file that includes the structure of the landing page.<br/>
 
 
 ## Author
