@@ -1,0 +1,11 @@
+.container {
+  &--faq {
+    width: 100vw;
+    background-color: $light-gray;
+
+    &__content {
+      width: $desktop-content-width;
+      margin: 0 auto;
+    }
+  }
+}

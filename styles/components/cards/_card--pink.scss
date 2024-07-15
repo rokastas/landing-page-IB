@@ -1,0 +1,53 @@
+.card {
+  &--pink {
+    background-color: $pink;
+
+    &__text {
+      display: block;
+      font-size: $text-small;
+      max-width: 170px;
+    }
+
+    &__logo {
+      flex-shrink: 0;
+      max-width: 42px;
+      max-height: 42px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    &--pink {
+      flex-direction: column;
+
+      &__text {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      &__logo {
+        max-width: 50px;
+        max-height: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card {
+    &--pink {
+      flex-direction: column;
+
+      &__text {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      &__logo {
+        max-width: 50px;
+        max-height: 50px;
+      }
+    }
+  }
+}

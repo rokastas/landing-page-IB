@@ -1,0 +1,7 @@
+.container {
+  &--blend {
+    min-width: 100vw;
+    min-height: 500px;
+    background-color: $pink;
+  }
+}

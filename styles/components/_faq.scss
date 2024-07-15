@@ -1,8 +1,8 @@
 .faq-section {
-  .faq-item {
+  &__item {
     max-width: 100vw;
 
-    .faq-question {
+    &__question {
       display: flex;
       cursor: pointer;
       position: relative;
@@ -14,7 +14,7 @@
         font-weight: $text-bold;
       }
 
-      .arrow {
+      &__arrow {
         position: absolute;
         right: 0;
         font-size: 20px;
@@ -22,7 +22,7 @@
       }
     }
 
-    .faq-answer {
+    &__answer {
       max-width: 90vw;
       margin: 0 auto;
       display: none;
@@ -30,21 +30,21 @@
     }
   }
 
-  .active {
-    .arrow {
-        transform: rotate(180deg);
+  &__item--active {
+    .faq-section__item__question-arrow {
+      transform: rotate(180deg);
     }
 
-    .faq-answer {
-        display: block;
+    .faq-section__item__answer {
+      display: block;
     }
   }
 }
 
 @media (max-width: 480px) {
   .faq-section {
-    .faq-item {
-      .faq-question {
+    &__item {
+      &__question {
         padding-right: 30px;
       }
     }

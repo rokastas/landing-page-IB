@@ -1,0 +1,23 @@
+.container {
+  &--subscribe {
+    min-width: 100vw;
+    position: relative;
+    background-color: black;
+    padding: $spacer-medium 0;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    &--subscribe {
+      padding: $spacer-large 0;
+
+      &__text {
+        transform: translateY(-65%) rotate(-90deg);
+        transform-origin: right;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

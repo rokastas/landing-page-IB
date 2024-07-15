@@ -1,0 +1,27 @@
+.grid {
+  &--performance {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    &--performance {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 0;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .grid {
+    &--performance {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: $tablet-content-width;
+      margin: 0 auto;
+    }
+  }
+}
