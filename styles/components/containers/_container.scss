@@ -5,22 +5,6 @@
   width: $desktop-content-width;
   margin: 0 auto;
   padding: $spacer-medium 0;
-
-  &--blend {
-    min-width: 100vw;
-    min-height: 500px;
-    background-color: $pink;
-  }
-
-  &--faq {
-    width: 100vw;
-    background-color: $light-gray;
-
-    &__content {
-      width: $desktop-content-width;
-      margin: 0 auto;
-    }
-  }
 }
 
 @media(max-width: 480px) {

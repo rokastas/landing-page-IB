@@ -6,40 +6,17 @@
   border-radius: 15px;
   gap: 16px;
 
-  &__logo {
-    flex-shrink: 0;
-    max-width: 42px;
-    max-height: 42px;
-  }
-
-  &__logo-small {
-    max-width: 42px;
-    max-height: 42px;
-  }
-
   &__text {
     display: block;
     font-size: $text-small;
     max-width: 170px;
   }
-
-  &--ingredient {
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
-  }
-
 }
 
 @media (max-width: 480px) {
   .card {
     padding: 12px 14px;
     min-height: auto;
-
-    &__logo {
-      max-width: 50px;
-      max-height: 50px;
-    }
 
     &__text {
       max-width: 100%;
@@ -52,10 +29,5 @@
   .card {
     padding: 12px 14px;
     gap: 10px;
-
-    &__logo {
-      max-width: 50px;
-      max-height: 50px;
-    }
   }
 }
