@@ -1,4 +1,4 @@
-# Landing Page Project
+# Landing Page
 
 ## Description
 
@@ -30,6 +30,7 @@ This project is a dynamic and responsive landing page for showcasing a health an
 ├── images/
 │ └── ...
 └── README.md
+
 
 ## Getting Started
 
@@ -75,6 +76,7 @@ Open your browser and navigate to http://localhost:8080 (or the port number prov
 
 
 ### File Descriptions
+
 **index.html**: The main HTML file that includes the structure of the landing page.
 **partials/**: Directory containing partial HTML files for different sections of the page.
 **scripts/**: Directory containing JavaScript files.
