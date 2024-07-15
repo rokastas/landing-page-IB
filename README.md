@@ -55,10 +55,10 @@ Start the HTTP Server
 http-server -p 8000
 ```
 
-Open your browser and navigate to http://localhost:8080 (or the port number provided by http-server).
+Open your browser and navigate to http://127.0.0.1:8000 (or the port number provided by http-server).
 
 
-### File Descriptions
+## File Descriptions
 
 **images/**: Directory containing image assets used in the project.<br/>
 **partials/**: Directory containing partial HTML files for different sections of the page.<br/>
