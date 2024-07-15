@@ -16,6 +16,12 @@
         max-width: 80px;
       }
     }
+
+    &__logo {
+      flex-shrink: 0;
+      max-width: 42px;
+      max-height: 42px;
+    }
   }
 }
 
@@ -31,6 +37,11 @@
       &__text {
         text-align: left;
         max-width: none;
+      }
+
+      &__logo {
+        max-width: 50px;
+        max-height: 50px;
       }
     }
   }
