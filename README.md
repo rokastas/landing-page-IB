@@ -17,19 +17,19 @@ This project is a dynamic and responsive landing page for showcasing a health an
 ## Project Structure
 
 .
-├── index.html
-├── partials/
-│ ├── blend-slider.html
-│ └── ...
-├── scripts/
-│ └── scripts.js
-├── styles/
-│ ├── styles.css
-│ ├── styles.scss
-│ └── ...
-├── images/
-│ └── ...
-└── README.md
+├── index.html<br/>
+├── partials/<br/>
+│ ├── blend-slider.html<br/>
+│ └── ...<br/>
+├── scripts/<br/>
+│ └── scripts.js<br/>
+├── styles/<br/>
+│ ├── styles.css<br/>
+│ ├── styles.scss<br/>
+│ └── ...<br/>
+├── images/<br/>
+│ └── ...<br/>
+└── README.md<br/>
 
 
 ## Getting Started
@@ -77,14 +77,14 @@ Open your browser and navigate to http://localhost:8080 (or the port number prov
 
 ### File Descriptions
 
-**index.html**: The main HTML file that includes the structure of the landing page.
-**partials/**: Directory containing partial HTML files for different sections of the page.
-**scripts/**: Directory containing JavaScript files.
-**scripts.js**: Main JavaScript file for handling dynamic content loading and Swiper initialization.
-**styles/**: Directory containing CSS and SCSS files.
-**styles.css**: Compiled CSS file.
-**styles.scss**: Main SCSS file for styling the page.
-**images/**: Directory containing image assets used in the project.
+**index.html**: The main HTML file that includes the structure of the landing page.<br/>
+**partials/**: Directory containing partial HTML files for different sections of the page.<br/>
+**scripts/**: Directory containing JavaScript files.<br/>
+**scripts.js**: Main JavaScript file for handling dynamic content loading and Swiper initialization.<br/>
+**styles/**: Directory containing CSS and SCSS files.<br/>
+**styles.css**: Compiled CSS file.<br/>
+**styles.scss**: Main SCSS file for styling the page.<br/>
+**images/**: Directory containing image assets used in the project.<br/>
 
 
 ## Author
