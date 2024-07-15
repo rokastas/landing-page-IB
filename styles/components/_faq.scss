@@ -28,6 +28,8 @@ $transition-duration: 0.3s;
     }
 
     .faq-answer {
+      max-width: 90vw;
+      margin: 0 auto;
       display: none;
       white-space: pre-wrap;
     }
@@ -48,7 +50,7 @@ $transition-duration: 0.3s;
   .faq-section {
     .faq-item {
       .faq-question {
-        padding-right: 30px;
+        // padding-right: 30px;
       }
     }
   }

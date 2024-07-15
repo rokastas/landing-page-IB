@@ -73,7 +73,7 @@
   background: black !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .swiper-slide {
     flex-direction: column;
     gap: 40px;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 541px) and (max-width: 1024px) {
   .swiper-slide {
     flex-direction: column;
     gap: 40px;

@@ -285,6 +285,8 @@
   font-weight: 800;
   text-align: center;
   margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .text--red {
   color: red;
@@ -331,7 +333,6 @@ b {
 .grid {
   display: grid;
   gap: 16px;
-  box-sizing: border-box;
 }
 .grid--4-cards {
   grid-template-columns: repeat(4, 1fr);
@@ -347,7 +348,7 @@ b {
   grid-template-rows: repeat(2, 1fr);
 }
 .grid--process {
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
 .grid--process__item__icon {
@@ -389,15 +390,10 @@ b {
   width: 12px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -3px;
+  top: 635px;
 }
 
 @media (max-width: 480px) {
-  .grid--4-cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 16px;
-  }
   .grid--subscribe {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -407,6 +403,15 @@ b {
     grid-template-rows: repeat(6, 1fr);
     gap: 0;
   }
+}
+@media (max-width: 541px) {
+  .grid--4-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+}
+@media (max-width: 768px) {
   .grid--process {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -462,6 +467,7 @@ b {
   }
   .grid--process {
     padding: 0 20px;
+    row-gap: 0;
   }
 }
 .horizontal-line {
@@ -472,7 +478,7 @@ b {
   justify-content: right;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .horizontal-line {
     display: none;
   }
@@ -553,7 +559,7 @@ footer {
   background: black !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .swiper-slide {
     flex-direction: column;
     gap: 40px;
@@ -562,7 +568,7 @@ footer {
     text-align: center;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 541px) and (max-width: 1024px) {
   .swiper-slide {
     flex-direction: column;
     gap: 40px;
@@ -594,6 +600,8 @@ footer {
   transition: transform 0.3s;
 }
 .faq-section .faq-item .faq-answer {
+  max-width: 90vw;
+  margin: 0 auto;
   display: none;
   white-space: pre-wrap;
 }
@@ -604,11 +612,6 @@ footer {
   display: block;
 }
 
-@media (max-width: 480px) {
-  .faq-section .faq-item .faq-question {
-    padding-right: 30px;
-  }
-}
 /* Basic Reset */
 * {
   margin: 0;
