@@ -16,20 +16,20 @@ This project is a dynamic and responsive landing page for showcasing a health an
 
 ## Project Structure
 
-.
-├── index.html<br/>
-├── partials/<br/>
-│ ├── blend-slider.html<br/>
-│ └── ...<br/>
-├── scripts/<br/>
-│ └── scripts.js<br/>
-├── styles/<br/>
-│ ├── styles.css<br/>
-│ ├── styles.scss<br/>
-│ └── ...<br/>
-├── images/<br/>
-│ └── ...<br/>
-└── README.md<br/>
+  .<br/>
+  ├── index.html<br/>
+  ├── partials/<br/>
+  │   ├── blend-slider.html<br/>
+  │   └── ...<br/>
+  ├── scripts/<br/>
+  │   └── scripts.js<br/>
+  ├── styles/<br/>
+  │   ├── styles.css<br/>
+  │   ├── styles.scss<br/>
+  │   └── ...<br/>
+  ├── images/<br/>
+  │   └── ...<br/>
+  └── README.md<br/>
 
 
 ## Getting Started
