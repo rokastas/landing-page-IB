@@ -209,9 +209,6 @@
   font-size: 16px;
   max-width: 170px;
 }
-.card--pink {
-  background-color: #f9e8e7;
-}
 .card--black {
   flex-direction: column;
   padding: 0;
@@ -249,9 +246,6 @@
   .card__text--wide {
     text-align: left;
   }
-  .card--pink {
-    flex-direction: column;
-  }
   .card--black {
     flex-direction: row;
     width: 100vw;
@@ -270,8 +264,45 @@
     max-width: 50px;
     max-height: 50px;
   }
+}
+.card--pink {
+  background-color: #f9e8e7;
+}
+.card--pink__text {
+  display: block;
+  font-size: 16px;
+  max-width: 170px;
+}
+.card--pink__logo {
+  flex-shrink: 0;
+  max-width: 42px;
+  max-height: 42px;
+}
+
+@media (max-width: 480px) {
   .card--pink {
     flex-direction: column;
+  }
+  .card--pink__text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .card--pink__logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card--pink {
+    flex-direction: column;
+  }
+  .card--pink__text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .card--pink__logo {
+    max-width: 50px;
+    max-height: 50px;
   }
 }
 .text--title-medium {
@@ -333,10 +364,6 @@ b {
 .grid {
   display: grid;
   gap: 16px;
-}
-.grid--4-cards {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 1fr);
 }
 .grid--subscribe {
   margin: 0 auto;
@@ -404,13 +431,6 @@ b {
     gap: 0;
   }
 }
-@media (max-width: 541px) {
-  .grid--4-cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0 16px;
-  }
-}
 @media (max-width: 768px) {
   .grid--process {
     grid-template-columns: repeat(1, 1fr);
@@ -451,10 +471,6 @@ b {
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
-  .grid--4-cards {
-    gap: 36px;
-    padding: 0 36px;
-  }
   .grid--subscribe {
     width: 80%;
     margin: 0 auto;
@@ -468,6 +484,31 @@ b {
   .grid--process {
     padding: 0 20px;
     row-gap: 0;
+  }
+}
+.grid--4-cards {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+@media (max-width: 540px) {
+  .grid--4-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 16px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  .grid--4-cards {
+    gap: 12px;
+    padding: 0 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid--4-cards {
+    gap: 36px;
+    padding: 0 36px;
   }
 }
 .horizontal-line {

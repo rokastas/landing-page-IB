@@ -23,10 +23,6 @@
     max-width: 170px;
   }
 
-  &--pink {
-    background-color: $pink;
-  }
-
   &--black {
     flex-direction: column;
     padding: 0;
@@ -73,10 +69,6 @@
       }
     }
 
-    &--pink {
-      flex-direction: column;
-    }
-
     &--black {
       flex-direction: row;
       width: 100vw;
@@ -95,10 +87,6 @@
     &__logo {
       max-width: 50px;
       max-height: 50px;
-    }
-
-    &--pink {
-      flex-direction: column;
     }
   }
 }
