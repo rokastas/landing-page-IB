@@ -1,7 +1,3 @@
-$arrow-size: 20px;
-$arrow-color: #333;
-$transition-duration: 0.3s;
-
 .faq-section {
   .faq-item {
     max-width: 100vw;
@@ -21,9 +17,8 @@ $transition-duration: 0.3s;
       .arrow {
         position: absolute;
         right: 0;
-        font-size: $arrow-size;
-        color: $arrow-color;
-        transition: transform $transition-duration;
+        font-size: 20px;
+        transition: transform 0.3s;
       }
     }
 
@@ -50,7 +45,7 @@ $transition-duration: 0.3s;
   .faq-section {
     .faq-item {
       .faq-question {
-        // padding-right: 30px;
+        padding-right: 30px;
       }
     }
   }

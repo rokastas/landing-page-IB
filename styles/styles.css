@@ -596,7 +596,6 @@ footer {
   position: absolute;
   right: 0;
   font-size: 20px;
-  color: #333;
   transition: transform 0.3s;
 }
 .faq-section .faq-item .faq-answer {
@@ -612,6 +611,11 @@ footer {
   display: block;
 }
 
+@media (max-width: 480px) {
+  .faq-section .faq-item .faq-question {
+    padding-right: 30px;
+  }
+}
 /* Basic Reset */
 * {
   margin: 0;
